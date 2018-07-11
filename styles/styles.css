@@ -1,3 +1,41 @@
 
 
-#leftPanel
+#leftPanel {
+    float: left;
+    width: auto;
+    height: 500px;
+    background: #FFF;
+    margin-right: 10px;
+}
+
+#clockTable {
+    width: 140px;
+    height: 132px;
+}
+
+#clockTable tr td {
+    background: url('../media/clock.png');
+    text-align: center;
+}
+
+#gamePanel {
+    float: left;
+    width: 600px;
+    height: 500px;
+    background: url("../media/background.png");
+    background-position: bottom;
+}
+
+#clock {
+    font-size: 30px;
+    color: red;
+    font-weight: 700;
+}
+
+#filledBalloons, #blowedBalloons {
+    font-size: 40px;
+}
+
+.smallBalloon {
+    margin: 10px;
+}
