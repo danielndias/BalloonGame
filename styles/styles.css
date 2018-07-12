@@ -39,3 +39,23 @@
 .smallBalloon {
     margin: 10px;
 }
+
+#restart {
+    width: 120px;
+    height: 89px;
+    text-align: center;
+}
+
+#backHome {
+    background-color: darkblue;
+    color: #FFFFFF;
+    padding: 5px 20px;
+    border: 1px solid darkblue;
+    text-decoration: none;
+}
+
+#backHome:hover {
+    background-color: #FFFFFF;
+    color: darkblue;
+    border: 1px solid darkblue;
+}

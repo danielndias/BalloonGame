@@ -18,7 +18,7 @@ function startGame() {
     else if (gameLevel == 2) //Normal Level: 60 seconds
         gameTime = 60;
     else if (gameLevel == 3)//Hard Level: 30 seconds
-        gameTime = 5;
+        gameTime = 30;
     else {
         alert("Invalid Level!");
         window.location.href = 'index.html';
@@ -27,7 +27,7 @@ function startGame() {
 
     document.getElementById('clock').innerHTML = gameTime;
 
-    var BalloonQty = 6;
+    var BalloonQty = 80;
 
     insertBalloons(BalloonQty)
 
@@ -85,8 +85,8 @@ function updatePoints() {
     filledBalloons--;
     blowedBalloons++;
 
-    document.getElementById('filledBalloons').innerHTML = filledBalloons;
-    document.getElementById('blowedBalloons').innerHTML = blowedBalloons;
+    document.getElementById('filledBalloons').innerHTML = filledBalloons.toString();
+    document.getElementById('blowedBalloons').innerHTML = blowedBalloons.toString();
 
     gameStatus(filledBalloons);
 }
@@ -100,4 +100,8 @@ function gameStatus(filledBalloons) {
 
 function stopGame() {
     clearTimeout(timerId);
+}
+
+function restart() {
+    location.reload();
 }
